@@ -8,7 +8,6 @@ for i in s1:
     d1[i]=s1.count(i)
 for j in s2:
     d2[j]=s2.count(j)
-print(d1,d2)
 for k,v in d2.items():
     if k in d1.keys():
         if v>d1.get(k):
@@ -20,4 +19,3 @@ for k,v in d2.items():
         s+=k*v
         cost+=1*v
 print(cost)
-print(s)
